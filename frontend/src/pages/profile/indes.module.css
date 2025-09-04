@@ -1,0 +1,169 @@
+.container{
+    padding: 1.3rem;
+    background: rgb(238, 244, 251);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.backDropContainer{
+    width: 100%;
+    height: 30vh;
+    background-image: url("/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+.backDropContainer>img{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+}
+.profileContainer_details{
+    padding-top: 6rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    margin-top: 1rem;
+}
+.card_profileContainer{
+    display: flex;
+
+}
+.card_profileContainer>img{
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.backdrop_overlay{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+    z-index: 4;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    opacity: 0.0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backdrop_overlay:hover{
+   opacity: 0.4;
+   background: rgb(0, 0, 0);
+}
+.workHistory_container{
+    display: flex;
+    gap: 1.4rem;
+    padding-top: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.workHistory_card{
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(135, 187, 222);
+
+}
+
+.profileContainer_details input{
+   outline: none;
+   border: none;
+   padding-inline: 10px;
+   padding-block: 8px;
+   width: fit-content;
+   background: rgb(238, 244, 251);
+}
+.profileContainer_details textarea{
+   outline: none;
+   border: none;
+   padding-inline: 10px;
+   padding-block: 8px;
+   font-family: "Poppins" !important;
+   font-size: 1rem;
+   background: rgb(238, 244, 251);
+}
+.nameEdit{
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.updateBtn{
+    margin: 1rem;
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(77, 133, 237 ,0.905);
+    outline: none;
+    border: none;
+    width: fit-content;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addWorkBtn{
+    border: 1px dotted silver;
+    padding-inline: 1rem;
+    background: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-block: 0.7rem;
+}
+
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0,0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allCommentsContainer{
+    width: 40vw;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.inputField {
+  padding-inline: 1.3rem; 
+  padding-block: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField:focus {
+  border-color: #2563eb; 
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}

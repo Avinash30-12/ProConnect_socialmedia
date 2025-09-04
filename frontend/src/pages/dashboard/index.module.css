@@ -1,0 +1,181 @@
+.scrollComponent{
+   
+   justify-content: center;
+}
+
+.createPostContainer{
+    display: flex;
+    height: 10svh;
+    width: 100%;
+    padding-inline: 0.6rem;
+    gap: 1.3rem;
+    position: relative;
+    align-items: center;
+    background: rgb(229, 242, 244);
+    border-radius: 20px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    max-width: 85%;
+}
+.uploadButton{
+    position: absolute;
+    right: 0;
+    bottom: -45%;
+    background-color: rgb(14, 167, 243);
+    color: aliceblue;
+    border-radius: 15px;
+    padding-inline: 1.2rem;
+    padding-block: 0.8rem;
+    cursor: pointer;
+}
+.createPostContainer>textarea{
+    width: 100%;
+}
+.fab{
+    background: rgb(14, 167, 243);
+    border-radius: 100%;
+    justify-content: center;
+   display: flex;
+}
+.fab>svg{
+   width: fit-content;
+   height: 40px;
+   color: rgb(254, 255, 255);
+   cursor: pointer;
+}
+.userProfile {
+   width: 50px;          /* fixed width */
+   height: 50px;         /* same as width */
+   border-radius: 50%;   /* makes it a circle */
+   object-fit: cover;    /* keeps aspect ratio, crops instead of stretching */
+}
+.textArea{
+   width: 80%;
+   height: 70%;
+   border: 1px solid silver;
+   border-radius: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-inline: 1.5rem;
+   padding-block: 0.8rem;
+   outline: none;
+}
+.singleCard{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid red;
+}
+.singleCard_Profile{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    padding-right: 3.4rem;
+}
+.singleCard_Profile>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.singleCard_Image{
+    width: 100%;
+    padding-top: 0.6rem;
+    height: fit-content;
+    overflow: hidden;
+}
+.singleCard_Image>img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.optionsContainer{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    padding-block: 1rem;
+    justify-content: center;
+}
+.optionsContainer>svg{
+    height: 100%;
+   width: 10%;
+   min-width: 1.2rem;
+}
+.Likes{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: center;
+    cursor: pointer;
+}
+.Likes>svg{
+   height: 100%;
+   width: 10%;
+}
+
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0,0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allCommentsContainer{
+    max-width: 1120px;
+    min-width: 40svw;
+    height: 80vh;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+}
+.postCommentContainer{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.postCommentContainer>input{
+    flex: 0.9;
+    padding-inline: 1.2rem;
+    padding-block: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(205, 232, 246);
+    border-radius: 12px;
+}
+.postCommentContainer>input:focus{
+    border: 1px solid rgb(134, 222, 236);
+}
+
+.commentBtn{
+    flex: 0.1;
+    width: fit-content;
+    padding: 1rem;
+    background: rgb(15, 156, 250);
+    border-radius: 12px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:864px) {
+    .allCommentsContainer{
+        width: 90%;
+    }
+}
